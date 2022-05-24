@@ -1,0 +1,85 @@
+﻿#main{
+    width:1520px;
+    padding:0;
+    line-height:20px;
+}
+#top{
+    height:50px;
+    background-color:#e6dfdf;
+
+}
+#left {
+    float:left;
+    width:300px;
+    margin-left:100px;
+    font-size:20px;
+}
+#content{
+    float:left;
+    width:890px;
+    font-size:20px;
+}
+#right{
+    float:right;
+    width:220px;
+}
+
+/*=================*/
+#menu_Left {
+      width:300px;
+      font-size:20px;
+}
+#menu_Left ul{
+        list-style-type:none;
+    text-decoration:none;
+}
+#menu_Left ul li{
+    line-height:40px;
+}
+#menu_Left ul li a{
+    list-style-type:none;
+    text-decoration:none;
+    font-size:20px;
+    color:#000000;
+    text-transform:capitalize;
+    font-weight:bold;
+}
+#menu_Left ul li a:hover{
+    color:#ff0000;
+}
+/*===================Content=================*/
+#content_Left{
+    width:320px;
+    float:left;
+}
+#content_Right{
+    width:565px;
+    float:left;
+}
+#content_Right a{
+    text-decoration:none;
+    color:#000000;
+    font-weight:bold;
+}
+#content_Right a:hover{
+    color:#ff0000;
+}
+
+
+/*===========Sản phẩm==========*/
+  .tang{
+           font-size:20px;
+           text-align:center;
+           padding-left:30px;
+          
+       }
+       .tang a{
+           text-align:center;
+           text-decoration:none;
+           color:#000000;
+       }
+       .tang a:hover{
+           color:#ff0000;
+       }
+
+       

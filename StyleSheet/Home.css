@@ -1,0 +1,40 @@
+﻿#main{
+    width:1520px;
+    padding:0;
+    line-height:20px;
+}
+#top{
+    height:50px;
+    background-color:#e6dfdf;
+
+
+}
+#left {
+    float:left;
+    width:150px;
+}
+#content{
+    float:left;
+    width:1210px;
+    margin-top:10px;
+}
+#right{
+    float:right;
+    width:150px;
+    font-size:20px;
+}
+/*=============content==========*/
+#content_Top{
+    height:50px;
+    background-color:#cecaca;
+    padding:15px;
+    margin-top:10px;
+}
+#content_Content{
+    padding:15px;
+    margin-top:10px;
+}
+#content_bottom{
+    padding:15px;
+    margin-top:10px;
+}

@@ -1,0 +1,217 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title></title>
+    <link href="StyleSheet/StyleSheet.css" rel="stylesheet" />
+    <link href='https://css.gg/phone.css' rel='stylesheet' />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+ 
+        .auto-style10 {
+            width: 147px;
+        }
+
+        .auto-style11 {
+            width: 155px;
+        }
+        .auto-style12 {
+            width: 96px;
+        }
+        
+       
+        .auto-style13 a:hover{
+            color:#ff0000;
+        }
+        .auto-style13 a{
+            width: 183px;
+            text-decoration:none;
+            color:#ffffff;
+            font-size:18px;
+        }
+     
+        .auto-style13 {
+            width: 189px;
+            color:#ffffff;
+            line-height:30px;
+        }
+          
+        .auto-style20 {
+            width: 147px;
+            height: 102px;
+        }
+        .auto-style21 {
+            width: 96px;
+            height: 102px;
+        }
+        .auto-style22 {
+            width: 155px;
+            height: 102px;
+        }
+        .auto-style24 {
+            width: 189px;
+            height: 102px;
+        }
+        .auto-style25 {
+            width: 189px;
+        }
+        </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div> 
+            <table  style="background:#c1bbbb">
+                <tr >
+                    <td colspan="3" style="background-color:#808080;height:30px;margin:0px" >
+                        
+                    </td>
+                </tr>              
+                <tr>
+                    <td class="LoGo_Home">
+                          <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">
+                          <img src="./imp/logoHome.jpg" width="150px" height="100px"/></asp:HyperLink>
+                    </td>              
+                    <td class="TimKiem">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:TextBox ID="txTimKiem" runat="server" Height="47px" Width="498px" placeholder="Nhập Sản phẩm bạn muốn tìm và Enter...."></asp:TextBox>
+                        <asp:ImageButton ID="btTimKiem" runat="server" ImageUrl="~/imp/timKiem.PNG" OnClick="btTimKiem_Click"  />
+                           
+                    </td>
+                    <td class="GioHang">
+                        <%--<img src="imp/gioHang.PNG" />--%>
+                        <a href="GioHang.aspx"><img src="imp/gioHang.PNG" /></a>
+                         
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div id="menu_link">
+                            <ul>
+                                <li><a href="Home.aspx">trang chủ</a></li>
+                                <li><a href="#">Mass</a>
+                                    <ul>
+                                        <li><a  href="MN_1_Tang_Can_Nhanh.aspx">tăng cân nhanh</a></li>                                      
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">whey protein</a>
+                                    <ul>
+                                        <li><a href="MN_2_1_Whey_Protein_Blend.aspx">whey protein blend</a></li>
+                                        <li><a href="MN_2_2_Whey_Protein_Isolate.aspx">whey protein isolate</a></li>
+                                        <li><a href="MN_2_3_Whey_Hydrolyzed.aspx">hydrolyzed whey</a></li>
+                                        <li><a href="MN_2_4_Whey_Meal_Replacement.aspx">Meal Replacement</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">giảm mỡ</a>
+                                    <ul>
+                                        <li><a href="MN_3_1_GM_Sinh_Nhiet_Dot_Mo.aspx">sinh nhiệt đốt mỡ</a></li>
+                                        <li><a href="MN_3_2_GM_It_Chat_Kich_Thich.aspx">ít chất kích thích</a></li>
+                                    </ul>
+                                </li>
+                                <%--<li><a href="#">combox x2</a>
+                                    <ul>
+                                        <li><a href="Combox_Tang_Can_Co.aspx">combo tăng cân tăng cơ</a></li>
+                                        <li><a href="Combox_Tang_Co_Giam_Mo.aspx">combo tăng cơ giảm mỡ</a></li>
+                                    </ul>
+                                </li>--%>
+                                <li><a href="#">phụ kiện</a>
+                                    <ul>
+                                        <li><a href="MN_4_1_Binh_Lac.aspx">bình lắc</a></li>
+                                        <li><a href="MN_4_2_Phu_Kien_Khac.aspx">phụ kiện khác</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="linkBT_DangKy" runat="server" OnClick="linkBT_DangKy_Click">Đăng ký</asp:LinkButton>
+                                    
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="linkBT_DangNhap" runat="server" OnClick="linkBT_DangNhap_Click">Đăng nhập</asp:LinkButton>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="linkBT_ThemXoaSua" runat="server" OnClick="linkBT_ThemXoaSua_Click" >Thêm xóa Sửa Sản Phẩm</asp:LinkButton>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </td>
+                   
+                </tr>
+            </table> 
+        </div>
+    <div>
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+               
+          </asp:ContentPlaceHolder>
+    </div>
+        <div>
+            <table style="background:#808080; width: 1519px;">
+                <tr>
+                    <td class="auto-style24">
+                        <h3 style="text-transform:uppercase">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;giới thiệu chung</h3>
+                    </td>
+                    <td class="auto-style20">
+                        <h3 style="text-transform:uppercase">Link FB để được từ vấn online</h3>
+                    </td>
+                    <td class="auto-style21">
+                        <h3 style="text-transform:uppercase">thông tin cân biết</h3>
+                    </td>
+                    <td class="auto-style22">
+                        <h3 style="text-transform:uppercase">thông tin về chung tôi</h3>           
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style13"><a  href="AA_GioiThieuVe_Iron_Sport.aspx">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giới thiệu về IRON SPORT</a></td>
+                    <td class="auto-style13"><a href="https://www.facebook.com/profile.php?id=100009143956732">https://www.facebook.com/profile.php?id=100009143956732</a></td>
+                    <td class="auto-style13"><a  href="AA_CheDoDinhDuong.aspx">Chế độ dinh dưỡng</a></td>
+                    <td class="auto-style11" style="font-size:18px;color:#ffffff">Tư vấn && đặt hàng<br />
+                        <i class="gg-phone"></i> 033344400</td>
+                </tr>
+                <tr class="auto-style13">
+                    <td class="auto-style25" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="AA_ChinhSachDoiTra.aspx">Chính sách đổi trả hàng</a></td>
+                    <td class="auto-style10" ><a href="https://www.facebook.com/double3double4">https://www.facebook.com/double3double4</a></td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style11">Phụ vụ tất cả ngày trong tuần trừ ngày lễ</td>
+                </tr>  
+                <tr class="auto-style13">
+                    <td class="auto-style25">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="AA_QuyDinhChung.aspx">Quy định chung</a></td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style11">Mở cửa vào lúc 8h00-22h00</td>
+                </tr>         
+                <tr class="auto-style13">
+                    <td class="auto-style25"></td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style11">Email: ironsport@gmail.com</td>
+                </tr>
+                <tr class="auto-style13">
+                    <td class="auto-style25"></td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style11">Chấp nhận thành toán bằng</td>
+                </tr>
+                <tr class="auto-style13">
+                    <td class="auto-style25"></td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style11"><img src="./imp/the_ATM.png"  style="height: 71px;width:100px"/></td>
+                </tr>
+            </table>
+        </div>
+        <div style="text-align:center;font-size:20px;color:#ff0000;background-color:#ffd800">
+            <br />
+            <b>Tất cả các sản phẩm mà IRON SPORT bán không phải là thuốc, không thể thay thế thuốc chữa bệnh.<br />
+            Hiệu quả khi dùng sản phẩm còn tùy thuộc vào cơ địa và chế độ ăn uống, sinh hoạt, tập luyện của mỗi người.</b>
+            <br /><br />
+
+        </div><br />   
+    </form>
+</body>
+</html>
+    

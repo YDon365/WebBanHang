@@ -1,0 +1,33 @@
+﻿
+
+
+#content1{
+    float:left;
+    width:1200px;
+    margin-top:10px;
+}
+    #content_L1{
+        float:left;
+        width:400px;
+    }
+    #content_R1{
+        
+        float:right;
+        width:780px;
+    }
+
+#content2{
+    float:left;
+    width:1200px;
+    margin-top:10px;
+}
+    #content_L2{
+        float:left;
+        width:400px;
+    }
+    #content_R2{
+        
+        float:right;
+        width:780px;
+    }
+

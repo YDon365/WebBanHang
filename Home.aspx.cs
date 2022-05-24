@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Web.Configuration;
+public partial class Home : System.Web.UI.Page
+{
+    SqlConnection cn1 = new SqlConnection(WebConfigurationManager.ConnectionStrings["strcon"].ConnectionString);
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        cn1.Open();
+        //if (cn1.State == ConnectionState.Open)
+        //    Response.Write("thanh cong");
+
+        SqlDataAdapter da = new SqlDataAdapter("select id,sp.MaSP, hinhSP,tenSP,donGia from  HINHSP h,SANPHAM sp where sp.MaSP=h.MaSP and  donGia >= 1900000  ",cn1);//(sp.MaSP='SP001' or sp.MaSP='SP005' or sp.MaSP='SP0020' or sp.MaSP='SP025' or sp.MaSP='SP012' or sp.MaSP='SP015' or sp.MaSP='SP004' )", cn1);
+        DataSet ds = new DataSet();
+        da.Fill(ds, "SANPHAM");
+
+        DataList1.DataSource = ds.Tables["SANPHAM"];
+        DataList1.DataBind();
+        cn1.Close();
+
+    }
+   
+}

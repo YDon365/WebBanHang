@@ -1,0 +1,110 @@
+﻿
+.LoGo_Home {
+   width: 400px;
+   text-align: right;
+   height: 20px;
+}
+ .TimKiem {
+     height: 20px;
+     width: 836px;
+     padding-bottom: 10px;
+     text-align:left;
+      
+}
+  .GioHang {
+     width: 484px;
+     height: 20px;
+}
+  .DangNhap{
+      width:146px;
+      height:30px;
+  }
+ /*Menu Link*/
+@charset "utf-8";
+*{
+	padding:0;
+    margin-left: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#menu_link {
+	font-size: 20px;
+	margin: 20px auto;
+    text-align:center;
+    background-color:#00F;
+
+  
+}
+#menu_link ul{
+	width: 90%;
+	list-style-type: none;
+	text-align: center;
+}
+#menu_link ul li {
+	display: inline-table;
+	width:auto;
+	height:30px;
+	line-height:30px;
+	position: relative;
+    text-transform:uppercase;
+   
+}
+#menu_link ul li a {
+	background-color: #00F;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #FFF;
+	display: block;
+	padding:5px 10px;
+}
+#menu_link ul li a:hover {
+	background-color: #0CF;
+}
+#menu_link ul ul li {
+	width: 200px;
+	height: 40px;
+	text-align:left;
+	border-top: 1px solid #FFFFFF;
+}
+#menu_link ul ul li a{
+	background-color: #90F;
+	text-transform: capitalize;
+	padding:5px;
+	display: block;
+}
+#menu_link ul ul, #menu_link ul ul ul {
+	display:none;
+	position:absolute;
+}
+#menu_link ul li:hover >ul {
+	display:block;
+}
+#menu_link ul ul ul{
+	position:absolute; top:-1px; left:100%;
+}
+
+/*================bottom=================*/
+#menu_bottom{
+    font-size:14px;
+}
+#menu_bottom ul{
+     list-style-type:none;
+     text-decoration:none;
+}
+#menu_bottom ul li{
+    text-transform:capitalize;
+    line-height:20px;
+    height: 59px;
+    width: 306px;
+}
+#menu_bottom ul li a{
+    color:#FFF;
+     list-style-type:none;
+     text-decoration:none;
+}
+
+#menu_bottom_tes a{
+    list-style-type:none;
+    
+}
